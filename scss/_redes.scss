@@ -1,0 +1,26 @@
+$redes:(
+    instagram:#e80028,
+    twitter:#1d9bf0,
+    spotify:#1db954
+);
+
+a.linea{-webkit-text-stroke: 0.1px;width: 100%;}
+
+@each $red,$color in $redes{
+    a.#{$red}{
+        position: relative;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 900;
+        color: black;
+        overflow: hidden;
+        background: linear-gradient(to right, $color, $color 50%, black 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 275ms ease;
+    }
+;}
+a:hover{background-position: 0 100%;}
