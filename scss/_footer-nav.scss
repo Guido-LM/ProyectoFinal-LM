@@ -21,7 +21,6 @@ $margen:(
       padding-top: $espacio;
       };
     };
-    .icono__footer{display:none;};
 }
 
 @media only screen and (min-width: 1024px){.navbar-nav{margin-left: 250px;};}
@@ -29,6 +28,14 @@ $margen:(
 img.iconoBar{width: 80px;}
 
 /*footer*/
+@media only screen and (max-width: 768px){
+  .footer__desktop{display:none;}
+}
+@media only screen and (min-width: 769px) and (max-width:1023px){
+  .footer__icono{display:none;};}
+@media only screen and (min-width: 1024px){
+  .footer__mobile{display:none;};
+  }
 
 a{white-space: nowrap;}
 .footer-bs {
