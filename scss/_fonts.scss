@@ -1,0 +1,51 @@
+/*tamaño de fonts*/
+h1.titulo{font-weight: 900; font-size: 60px;}
+.subtitulo{font-weight: 900;}
+a{font-size: 24px;}
+p{font-size: 16px;}
+/*mobile*/
+@media only screen and (max-width: 768px){
+    .subtitulo{font-size: 40px;}
+    .tituloI{font-size: 63px;font-weight: 900;}
+    h6{font-size: 15px;}
+}
+/*tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .subtitulo{font-size: 55px;}
+    .tituloI{font-size: 80px;font-weight: 900; text-align: center;}
+    h6{font-size: 18px;}
+}
+/*desktop*/
+@media only screen and (min-width: 1024px){
+    .subtitulo{font-size: 70px;}
+    .tituloI{font-size: 80px; font-weight: 900;}
+    h6{font-size: 18px;}
+}
+
+/*text transition*/
+a {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 900;
+  color: black;
+  overflow: hidden;
+  background: linear-gradient(to right, white, white 50%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 201% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none; // text decorations are clipped in WebKit browsers
+}
+a:hover{background-position: 0 100%;}
+
+/*tipografia*/
+h1.titulo, a, .infoA{font-family: 'Bebas Neue', cursive;}
+.subtitulo, h2, h3, h4, h5, h6, p{font-family: 'Mulish', sans-serif;}
+
+.barra{border-bottom: 3px solid yellow;}
+.barraT{border-top: 3px solid yellow;}
+.bordeR{border-radius: 20px;}
+.enLinea{inline-size: auto}

@@ -1,0 +1,35 @@
+/*Fondo*/
+
+.container-fluid{padding: 0px;}
+
+.celeste{background-color: #23b0cd;}
+
+.fondoAmarillo{
+  background-color: yellow;
+  box-shadow: 1px 5px 10px 1px (#00000040);}
+
+header, footer, .fondoAnimado{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} 
+
+h4.subtitulo{
+  background: -webkit-linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}

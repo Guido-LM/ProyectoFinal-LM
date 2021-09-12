@@ -1,0 +1,14 @@
+
+
+/*integrantes*/
+.localTxt{grid-area: localTxt; background-color: #ffffff4f;}
+
+/*premios*/
+.premios{border-radius: 5px; margin: 30px 50px 30px 50px;}
+.premios div.notas p{width: 200px; height: 150px;
+  border: 1px solid black;
+  background-color: #ffffff4f;
+  border-radius: 5px;}
+ 
+ 
+div.notas {display: flex; align-items: center;justify-content: space-evenly;}

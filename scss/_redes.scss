@@ -4,6 +4,7 @@ $redes:(
     spotify:#1db954
 );
 
+a.redesL{padding: 0px 50px 0px 50px;}
 a.linea{-webkit-text-stroke: 0.1px;width: 100%;}
 
 @each $red,$color in $redes{
