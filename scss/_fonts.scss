@@ -1,25 +1,45 @@
+
+$fuente:(
+    titulo-mobile: 63px,
+    titulo: 80px,
+    subtitulo-mobile: 40px,
+    subtitulo-tablet: 55px,
+    subtitulo-desktop: 70px,
+    h6-mobile: 15px,
+    h6: 18px,
+    a: 24px,
+    p: 16px,
+); 
+
+
 /*tamaño de fonts*/
 h1.titulo{font-weight: 900; font-size: 60px;}
 .subtitulo{font-weight: 900;}
-a{font-size: 24px;}
-p{font-size: 16px;}
+a{font-size:map-get($fuente, a);}
+p{font-size:map-get($fuente, p);}
+
+
+
 /*mobile*/
 @media only screen and (max-width: 768px){
-    .subtitulo{font-size: 40px;}
-    .tituloI{font-size: 63px;font-weight: 900;}
-    h6{font-size: 15px;}
+    .subtitulo{font-size:map-get($fuente, subtitulo-mobile);}
+    .tituloI{font-size:map-get($fuente, titulo-mobile);font-weight: 900;}
+    h6{font-size:map-get($fuente, h6-mobile);}
+    .txt__carousel{font-size:map-get($fuente, p);}
 }
 /*tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
-    .subtitulo{font-size: 55px;}
-    .tituloI{font-size: 80px;font-weight: 900; text-align: center;}
-    h6{font-size: 18px;}
+    .subtitulo{font-size:map-get($fuente, subtitulo-tablet);}
+    .tituloI{font-size:map-get($fuente, titulo);font-weight: 900; text-align: center;}
+    h6{font-size:map-get($fuente, h6);}
+    .txt__carousel{font-size:map-get($fuente, p);}
 }
 /*desktop*/
 @media only screen and (min-width: 1024px){
-    .subtitulo{font-size: 70px;}
-    .tituloI{font-size: 80px; font-weight: 900;}
-    h6{font-size: 18px;}
+    .subtitulo{font-size:map-get($fuente, subtitulo-desktop);}
+    .tituloI{font-size:map-get($fuente, titulo); font-weight: 900;}
+    h6{font-size:map-get($fuente, h6);}
+    .txt__carousel{font-size:map-get($fuente, a);}
 }
 
 /*text transition*/

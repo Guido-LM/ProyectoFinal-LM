@@ -10,7 +10,6 @@ a.linea {
 a.instagram {
   position: relative;
   display: inline-block;
-  font-size: 24px;
   font-weight: 900;
   color: black;
   overflow: hidden;
@@ -25,7 +24,6 @@ a.instagram {
 a.twitter {
   position: relative;
   display: inline-block;
-  font-size: 24px;
   font-weight: 900;
   color: black;
   overflow: hidden;
@@ -40,7 +38,6 @@ a.twitter {
 a.spotify {
   position: relative;
   display: inline-block;
-  font-size: 24px;
   font-weight: 900;
   color: black;
   overflow: hidden;
@@ -228,7 +225,9 @@ p {
     font-size: 63px;
     font-weight: 900; }
   h6 {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .txt__carousel {
+    font-size: 16px; } }
 
 /*tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -239,7 +238,9 @@ p {
     font-weight: 900;
     text-align: center; }
   h6 {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .txt__carousel {
+    font-size: 16px; } }
 
 /*desktop*/
 @media only screen and (min-width: 1024px) {
@@ -249,7 +250,9 @@ p {
     font-size: 80px;
     font-weight: 900; }
   h6 {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .txt__carousel {
+    font-size: 24px; } }
 
 /*text transition*/
 a {
@@ -406,12 +409,6 @@ textarea:focus {
   outline-width: 0;
   font-weight: 400; }
 
-button:focus {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  outline-width: 0; }
-
 .pay {
   width: 80px;
   height: 40px;
@@ -436,19 +433,6 @@ button:focus {
   border-top: 1px lightgray solid;
   margin-top: 10px;
   padding-top: 10px; }
-
-.btn-blue {
-  border: none;
-  border-radius: 10px;
-  background-color: #673AB7;
-  color: #fff;
-  padding: 8px 15px;
-  margin: 20px 0px;
-  cursor: pointer; }
-
-.btn-blue:hover {
-  background-color: #311B92;
-  color: #fff; }
 
 #checkout {
   float: left; }
