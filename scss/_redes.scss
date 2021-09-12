@@ -5,7 +5,7 @@ $redes:(
 );
 
 a.redesL{padding: 0px 50px 0px 50px;}
-a.linea{-webkit-text-stroke: 0.1px;width: 100%;}
+a.linea{-webkit-text-stroke: 0.1px;width: 100%;letter-spacing: 1px;}
 
 @each $red,$color in $redes{
     a.#{$red}{
