@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*redes*/
 a.redesL {
   padding: 0px 50px 0px 50px; }
 
@@ -55,6 +56,7 @@ a.spotify {
 a:hover {
   background-position: 0 100%; }
 
+/*productos*/
 @media only screen and (max-width: 768px) {
   .separar {
     max-width: 99%;
@@ -305,7 +307,7 @@ h4.subtitulo {
   background-size: 400% 400%; }
 
 /*bordes*/
-.barraXY {
+.bordeXY {
   border: 3px solid yellow; }
 
 .marco {
@@ -336,32 +338,28 @@ div[data-toggle="collapse"] {
   font-size: 18px; }
 
 /*carro*/
-.plus-minus {
+.signo {
   position: relative; }
-
-.plus {
-  position: absolute;
-  top: -4px;
-  left: 2px;
-  cursor: pointer; }
-
-.minus {
-  position: absolute;
-  top: 8px;
-  left: 5px;
-  cursor: pointer; }
+  .signo__mas {
+    position: absolute;
+    top: -4px;
+    left: 2px;
+    cursor: pointer; }
+  .signo__menos {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    cursor: pointer; }
 
 .vsm-text:hover {
   color: #FF5252; }
 
-.book,
-.book-img {
-  width: 180px;
-  height: 180px;
-  border-radius: 5px; }
-
-.book {
+.vinilo {
   margin: 15px 15px 5px 15px; }
+  .vinilo__img {
+    width: 180px;
+    height: 180px;
+    border-radius: 5px; }
 
 .card {
   margin: 40px 0px;
@@ -423,8 +421,7 @@ textarea:focus {
   float: right; }
 
 @media screen and (max-width: 768px) {
-  .book,
-  .book-img {
+  .vinilo__img {
     width: 150px;
     height: 150px; }
   .card {

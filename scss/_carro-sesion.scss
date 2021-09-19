@@ -4,37 +4,33 @@
 
 /*carro*/
 
-.plus-minus {
-    position: relative
-}
-
-.plus {
-    position: absolute;
-    top: -4px;
-    left: 2px;
-    cursor: pointer
-}
-
-.minus {
+.signo{
+    position: relative;
+    &__mas{
+        position: absolute;
+        top: -4px;
+        left: 2px;
+        cursor: pointer;
+    };
+    &__menos{
     position: absolute;
     top: 8px;
     left: 5px;
-    cursor: pointer
+    cursor: pointer;
+    };
 }
 
 .vsm-text:hover {
     color: #FF5252
 }
 
-.book,
-.book-img {
+.vinilo{
+    margin: 15px 15px 5px 15px;
+    &__img{
     width: 180px;
     height: 180px;
-    border-radius: 5px
-}
-
-.book {
-    margin: 15px 15px 5px 15px
+    border-radius: 5px;
+    };
 }
 
 .card {
@@ -107,10 +103,11 @@ textarea:focus {
 
 @media screen and (max-width: 768px) {
 
-    .book,
-    .book-img {
-        width: 150px;
-        height: 150px
+    .vinilo{
+        &__img{
+            width: 150px;
+            height: 150px
+        };
     }
 
     .card {
