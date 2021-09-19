@@ -2,10 +2,15 @@
 
 .container-fluid{padding: 0px;}
 
-.celeste{background-color: #23b0cd;}
+$fondo:(
+	celeste:#23b0cd,
+	amarillo:yellow,	
+);
 
-.fondoAmarillo{
-  background-color: yellow;
+@each $bcolor,$color in $fondo{
+	.fondo__#{$bcolor}{
+	background-color: $color;
+	};
 }
 
 header, footer, .fondoAnimado{
@@ -32,4 +37,20 @@ h4.subtitulo{
   -webkit-text-fill-color: transparent;
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
+}
+
+/*bordes*/
+
+.barraXY{border: 3px solid yellow;}
+.marco{border: 3px solid black;}
+$bordes:(
+top:3px solid yellow,
+bottom:3px solid yellow,
+radius:20px,
+);
+
+@each $posicion,$tipo in $bordes{
+	.borde__#{$posicion}{
+		border-#{$posicion}:$tipo;
+	};
 }
