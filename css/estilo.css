@@ -8,6 +8,17 @@ a.linea {
   width: 100%;
   letter-spacing: 1px; }
 
+@media only screen and (min-width: 1024px) {
+  .redes {
+    width: 80%; } }
+
+@media only screen and (max-width: 768px) {
+  .redes {
+    width: 32%; } }
+
+.redes__ancho {
+  width: 40px; }
+
 a.instagram {
   position: relative;
   display: inline-block;

@@ -8,6 +8,17 @@ $redes:(
 a.redesL{padding: 0px 50px 0px 50px;}
 a.linea{-webkit-text-stroke: 0.1px;width: 100%;letter-spacing: 1px;}
 
+.redes{
+    @media only screen and (min-width: 1024px){
+    width:80%;};
+    @media only screen and (max-width: 768px){
+    width:32%;
+    };
+    &__ancho{
+        width:40px;
+    };  
+};
+
 @each $red,$color in $redes{
     a.#{$red}{
         position: relative;
