@@ -72,6 +72,12 @@ a:hover {
     max-width: 32%;
     margin: 5px 7px; } }
 
+.area__info {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #ffffff4f;
+  font-weight: 600; }
+
 .boton {
   padding: 6px;
   border-color: yellow;
