@@ -4,7 +4,8 @@
 
 $fondo:(
 	celeste:#23b0cd,
-	amarillo:yellow,	
+	amarillo:yellow,
+	opaco:#000000d1,	
 );
 
 @each $bcolor,$color in $fondo{

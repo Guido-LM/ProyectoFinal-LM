@@ -103,6 +103,21 @@ a:hover {
   color: white;
   background-color: black; }
 
+/*carousel*/
+@media only screen and (min-width: 1024px) {
+  .tamaño__carousel {
+    width: 630px;
+    height: 355px; } }
+
+@media only screen and (max-width: 768px) {
+  .tamaño__carousel {
+    width: 375px;
+    height: 210px; } }
+
+.tamaño__carousel--txt {
+  padding: 4px 0px;
+  margin: 0px -15%; }
+
 /*premios*/
 .premios {
   border-radius: 5px;
@@ -261,7 +276,7 @@ p {
   h6 {
     font-size: 18px; }
   .txt__carousel {
-    font-size: 24px; } }
+    font-size: 16px; } }
 
 /*text transition*/
 a {
@@ -302,6 +317,9 @@ h1.titulo, a, .infoA {
 
 .fondo__amarillo {
   background-color: yellow; }
+
+.fondo__opaco {
+  background-color: #000000d1; }
 
 header, footer, .fondoAnimado {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);

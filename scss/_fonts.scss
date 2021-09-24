@@ -39,7 +39,7 @@ p{font-size:map-get($fuente, p);}
     .subtitulo{font-size:map-get($fuente, subtitulo-desktop);}
     .tituloI{font-size:map-get($fuente, titulo); font-weight: 900;}
     h6{font-size:map-get($fuente, h6);}
-    .txt__carousel{font-size:map-get($fuente, a);}
+    .txt__carousel{font-size:map-get($fuente, p);}
 }
 
 /*text transition*/
