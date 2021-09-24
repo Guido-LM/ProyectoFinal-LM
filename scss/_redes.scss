@@ -9,6 +9,7 @@ a.redesL{padding: 0px 50px 0px 50px;}
 a.linea{-webkit-text-stroke: 0.1px;width: 100%;letter-spacing: 1px;}
 
 .redes{
+    transition: transform .2s;
     @media only screen and (min-width: 1024px){
     width:80%;};
     @media only screen and (max-width: 768px){
@@ -17,6 +18,10 @@ a.linea{-webkit-text-stroke: 0.1px;width: 100%;letter-spacing: 1px;}
     &__ancho{
         width:40px;
     };  
+};
+
+.redes:hover{
+    transform: scale(1.4);    
 };
 
 @each $red,$color in $redes{

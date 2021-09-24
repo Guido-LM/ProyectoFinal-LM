@@ -8,16 +8,19 @@ a.linea {
   width: 100%;
   letter-spacing: 1px; }
 
-@media only screen and (min-width: 1024px) {
-  .redes {
-    width: 80%; } }
+.redes {
+  transition: transform .2s; }
+  @media only screen and (min-width: 1024px) {
+    .redes {
+      width: 80%; } }
+  @media only screen and (max-width: 768px) {
+    .redes {
+      width: 32%; } }
+  .redes__ancho {
+    width: 40px; }
 
-@media only screen and (max-width: 768px) {
-  .redes {
-    width: 32%; } }
-
-.redes__ancho {
-  width: 40px; }
+.redes:hover {
+  transform: scale(1.4); }
 
 a.instagram {
   position: relative;
@@ -134,6 +137,10 @@ a:hover {
       border-radius: 5px; }
 
 /*navbar*/
+@media only screen and (min-width: 1024px) {
+  .seleccionado {
+    border-top: 3px solid yellow; } }
+
 @media only screen and (max-width: 768px) {
   .fixed__navbar {
     position: fixed;
@@ -152,7 +159,9 @@ a:hover {
   main.carro {
     padding-top: 80px; }
   main.iniciar-sesion {
-    padding-top: 80px; } }
+    padding-top: 80px; }
+  .opacidad-50 {
+    opacity: 50%; } }
 
 @media only screen and (min-width: 1024px) {
   .navbar-nav {
